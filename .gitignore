@@ -1,0 +1,28 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node / frontend build
+node_modules/
+frontend/dist/
+
+# Local data (uploaded PDFs, vector database) and downloaded models
+data/uploads/*
+data/chroma/*
+!data/uploads/.gitkeep
+!data/chroma/.gitkeep
+models/
+
+# Editors / OS / logs
+.vscode/
+.idea/
+.DS_Store
+*.log
